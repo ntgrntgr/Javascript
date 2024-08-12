@@ -1,4 +1,16 @@
+const eventListener = () =>{
+    console.log('click');
+}
+const buttonElement = document.querySelector('.js-button');
+            buttonElement.addEventListener('click',eventListener
+            );
+            buttonElement.removeEventListener('click',eventListener)
+            buttonElement.addEventListener('click',()=>{
+                console.log('click2');
+            })
 
+            
+            
 function handleCostKeydown(event){
     if(event.key === 'Enter'){
     calculateTotal();
